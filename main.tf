@@ -4,7 +4,7 @@ region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-06b72b3b2a773be2b"
+  ami             = "ami-0e5d58de654dfb50d"
   instance_type   = "t2.micro"
   key_name        = "venkatn"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -23,7 +23,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-06b72b3b2a773be2b"
+  ami             = "ami-0e5d58de654dfb50d"
   instance_type   = "t2.micro"
   key_name        = "venkatn"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -42,7 +42,7 @@ EOF
 }
 
 resource "aws_instance" "three" {
-  ami             = "ami-06b72b3b2a773be2b"
+  ami             = "ami-0e5d58de654dfb50d"
   instance_type   = "t2.micro"
   key_name        = "venkatn"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -53,7 +53,7 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = "ami-06b72b3b2a773be2b"
+  ami             = "ami-0e5d58de654dfb50d"
   instance_type   = "t2.micro"
   key_name        = "venkatn"
   vpc_security_group_ids = [aws_security_group.five.id]
