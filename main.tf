@@ -4,7 +4,7 @@ region = "ap-southeast-1"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-06b72b3b2a773be2b "
+  ami             = "ami-06b72b3b2a773be2b"
   instance_type   = "t2.micro"
   key_name        = "venkatn"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -15,7 +15,7 @@ sudo -i
 yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
-echo "hai all this is my app created by terraform infrastructurte by raham sir server-1" > /var/www/html/index.html
+echo "hai all this is my app created by terraform infrastructurte by venkat sir server-1" > /var/www/html/index.html
 EOF
   tags = {
     Name = "web-server-1"
@@ -23,7 +23,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-06b72b3b2a773be2b "
+  ami             = "ami-06b72b3b2a773be2b"
   instance_type   = "t2.micro"
   key_name        = "venkatn"
   vpc_security_group_ids = [aws_security_group.five.id]
@@ -34,7 +34,7 @@ sudo -i
 yum install httpd -y
 systemctl start httpd
 chkconfig httpd on
-echo "hai all this is my website created by terraform infrastructurte by raham sir server-2" > /var/www/html/index.html
+echo "hai all this is my website created by terraform infrastructurte by venkat sir server-2" > /var/www/html/index.html
 EOF
   tags = {
     Name = "web-server-2"
@@ -53,9 +53,9 @@ resource "aws_instance" "three" {
 }
 
 resource "aws_instance" "four" {
-  ami             = "ami-06b72b3b2a773be2b "
+  ami             = "ami-06b72b3b2a773be2b"
   instance_type   = "t2.micro"
-  key_name        = "venkan"
+  key_name        = "venkatn"
   vpc_security_group_ids = [aws_security_group.five.id]
   availability_zone = "ap-southeast-1b"
   tags = {
